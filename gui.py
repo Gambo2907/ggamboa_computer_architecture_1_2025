@@ -31,7 +31,7 @@ def run_gui():
 
     # Cargar y mostrar la imagen original
     try:
-        original_img = Image.open(IMAGE_PATH)
+        original_img = Image.open(IMAGE_PATH).convert('L')
         original_img_tk = ImageTk.PhotoImage(original_img)
         original_label = tk.Label(root, image=original_img_tk)
         original_label.pack(padx=10, pady=10)
