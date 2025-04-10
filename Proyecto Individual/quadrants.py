@@ -49,8 +49,6 @@ def save_quadrant_files(quadrant_img, output_img="quadrant.img", output_txt="qua
 
     # Guardar la imagen en un archivo binario (.img)
     with open(output_img, "wb") as f:
-        # Encabezado: ancho y alto (4 bytes cada uno, little-endian)
-        f.write(struct.pack("<II", width, height))
         # Datos de píxeles (cada píxel es un byte)
         f.write(quadrant_img.tobytes())
 
