@@ -1,1 +1,1 @@
-# Proyecto Individual - Desarrollo de una aplicación para la generación de gráficos y texto
+# ggamboa_computer_architecture_1_2025
