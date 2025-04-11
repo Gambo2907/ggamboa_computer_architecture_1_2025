@@ -11,9 +11,7 @@ def extract_quadrant(image_path, quadrant_number):
 
     # Calcular dimensiones de cada cuadrante en una grilla 4x4
     quadrant_width = width // 4
-    print(quadrant_width)
     quadrant_height = height // 4
-    print(quadrant_height)
 
     if quadrant_number < 1 or quadrant_number > 16:
         raise ValueError("El número de cuadrante debe estar entre 1 y 16.")
@@ -33,19 +31,12 @@ def extract_quadrant(image_path, quadrant_number):
     quadrant_img = img.crop((left, upper, right, lower))
     return quadrant_img
 
-def save_quadrant_files(quadrant_img, output_img="quadrant.img", output_txt="quadrant.txt"):
+def save_quadrant_files(quadrant_img, output_img="quadrant.img"):
     """
-    Guarda el cuadrante en un archivo binario (.img) con encabezado de ancho y alto
-    y en un archivo de texto (.txt) con los valores de píxeles.
+    Guarda el cuadrante en un archivo binario (.img) con los valores de píxeles.
     """
     width, height = quadrant_img.size
     pixels = list(quadrant_img.getdata())
-
-    # Guardar valores de píxeles en un archivo de texto
-    with open(output_txt, "w") as f:
-        for i in range(height):
-            row_pixels = pixels[i * width:(i + 1) * width]
-            f.write(" ".join(str(pixel) for pixel in row_pixels) + "\n")
 
     # Guardar la imagen en un archivo binario (.img)
     with open(output_img, "wb") as f:
