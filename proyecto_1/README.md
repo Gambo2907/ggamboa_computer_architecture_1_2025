@@ -9,4 +9,4 @@ Instrucciones de uso:
 Se abrirá el programa y encontrará tres botones y la imagen original que tiene dimensiones de 400x400.
 2. Encontrará un cuadro de texto para escoger el cuadrante que quiera interpolar (1 al 16), luego de escribir el número del cuadrante escogido se selecciona el botón de "Mostrar cuadrante", el cuadrante tiene dimensiones 100x100.
 3. Luego seleccione el botón de "Realizar Interpolación", se mostrará un mensaje que detalla la realización correcta de la interpolación.
-4. Finalmente para mostrar la imagen interpolada seleccione el botón "Mostrar Imagen Interpolada". Mostrará en patalla la imagen interpolada con dimensiones 200x200.
+4. Finalmente para mostrar la imagen interpolada seleccione el botón "Mostrar Imagen Interpolada". Mostrará en patalla la imagen interpolada.
