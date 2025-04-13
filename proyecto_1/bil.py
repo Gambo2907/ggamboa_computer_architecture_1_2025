@@ -3,7 +3,7 @@ from PIL import Image
 import matplotlib.pyplot as plt
 def bilinear():
     # Dimensiones conocidas
-    height, width = 200, 200
+    height, width = 400, 400
 
     # Lee los datos crudos
     raw_data = np.fromfile("output.img", dtype=np.uint8)
